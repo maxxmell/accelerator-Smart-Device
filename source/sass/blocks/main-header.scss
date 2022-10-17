@@ -1,0 +1,60 @@
+.main-header {
+  background: $top-to-bottom-dark;
+  min-width: 320px;
+}
+
+.main-header__container {
+  box-sizing: border-box;
+  min-height: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  align-items: center;
+  grid-auto-flow: row dense;
+  grid-template-columns: minmax(220px, max-content) minmax(480px, 1fr) minmax(220px, max-content);
+  gap: 20px;
+
+  @include vp-1279 {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+
+.main-header__logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.main-header__logo-text {
+  margin-left: 15px;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.main-header__logo-img {
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+}
+
+.main-header__contacts-list {
+  justify-self: center;
+
+  @include vp-1279 {
+    justify-self: end;
+  }
+}
+
+.main-header__callback-button {
+  margin: 5px 60px 10px 0;
+
+  @include vp-1279 {
+    display: none;
+  }
+}
