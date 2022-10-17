@@ -15,29 +15,28 @@
   text-transform: uppercase;
   color: #f2f5f7;
 
-  background-color: #041427;
-  border: 1px solid #041427;
+  background-color: $black-pearl-2;
+  border: 1px solid $black-pearl-2;
   border-radius: 3px;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
   &--white {
-    background-color: $color-default-white;
-    color: $color-neon-blue;
+    background-color: $alice-blue-2;
+    color: $deep-sky-blue-2;
+    border: 1px solid $deep-sky-blue-2;
   }
 
   &--blue {
-    background-color: $color-default-white;
-    color: $color-neon-blue;
+    background-color: $deep-sky-blue-2;
+    border: 1px solid $deep-sky-blue-2;
+    color: $alice-blue;
   }
 
   &--white-border {
-    border: 1px solid $color-default-white;
-  }
-
-  &--blue-border {
-    border: 1px solid $color-neon-blue;
+    border: 1px solid $alice-blue;
+    color: $alice-blue;
   }
 
   &:disabled {

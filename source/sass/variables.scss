@@ -10,12 +10,19 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$black-pearl:                       #041827;
+$black-pearl-2:                     #041427;
+$deep-sky-blue:                     #00b3ff;
+$deep-sky-blue-2:                   #00b2ff;
+$alice-blue:                        #f2f5f6;
+$alice-blue-2:                      #f8fdff;
+$whisper:                           #ebebeb;
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$top-to-bottom-dark:                linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+$top-to-bottom-light:               linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
 
 // Typography
 // ---------------------------------
