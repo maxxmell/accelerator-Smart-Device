@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import renderAccordion from './modules/accordion';
+
+const maxViewport = 767;
 
 // ---------------------------------
 
@@ -17,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    renderAccordion('accordion', maxViewport);
   });
 });
 

@@ -1,0 +1,11 @@
+.accordion__block--closed {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.accordion__header {
+  @include vp-767 {
+    cursor: pointer;
+  }
+}

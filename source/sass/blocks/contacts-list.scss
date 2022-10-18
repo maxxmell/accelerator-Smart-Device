@@ -1,6 +1,6 @@
 .contacts-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   gap: 30px;
   margin: 15px 0 20px;
   padding: 0;
@@ -13,7 +13,7 @@
   list-style: none;
 
   @include vp-1279 {
-    grid-template-columns: repeat(auto-fill, 40px);
+    grid-template-columns: repeat(auto-fit, 40px);
     gap: 20px;
     min-width: 100px;
     margin: 0;

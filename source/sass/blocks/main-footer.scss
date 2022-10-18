@@ -1,0 +1,147 @@
+.main-footer {
+  background-color: $black-pearl;
+  min-width: 260px;
+  color: $color-default-white;
+}
+
+.main-footer__container {
+  box-sizing: border-box;
+  min-height: 280px;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: minmax(215px, max-content) 1fr;
+  gap: 30px;
+
+  @include vp-1279 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-footer__wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include vp-1279 {
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+}
+
+.main-footer__logo-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
+}
+
+.main-header__logo-text {
+  margin-left: 15px;
+}
+
+.main-footer__navigation {
+  justify-self: end;
+  box-sizing: border-box;
+  min-height: 130px;
+  min-width: 470px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(345px, max-content));
+  gap: 30px;
+
+  @include vp-1279 {
+    padding-top: 0;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 130px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    display: block;
+    min-width: 260px;
+  }
+}
+
+.main-footer__navigation__header {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.main-footer__navigation-list {
+  list-style: none;
+  padding: 0;
+  min-width: 220px;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, 220px);
+  gap: 30px;
+
+  @include vp-1279 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-footer__navigation-item {
+  width: 220px;
+}
+
+.main-footer__navigation-list a {
+  min-height: 20px;
+  display: flex;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7);
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.main-footer__eshop-nav .main-footer__navigation-list {
+  min-width: 470px;
+
+  @include vp-1279 {
+    min-width: 220px;
+  }
+}
+
+.main-footer__contacts .main-footer__navigation-list {
+  @include vp-1279 {
+    min-width: 320px;
+  }
+}
+
+.main-footer__contacts a {
+  min-width: 260px;
+}
