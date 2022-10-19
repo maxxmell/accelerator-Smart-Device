@@ -2,27 +2,33 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 350px;
+  padding-left: 350px;
+  padding-right: 350px;
 
   @include vp-1919 {
-    padding: 0 calc(50vw - 610px);
+    padding-left: calc(50vw - 610px);
+    padding-right: calc(50vw - 610px);
   }
 
   @include vp-1279 {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @include vp-1023 {
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   @include vp-767 {
-    padding: 0 48px;
+    padding-left: 48px;
+    padding-right: 48px;
     max-width: 670px;
   }
 
   @include vp-374 {
-    padding: 0 26px;
+    padding-left: 26px;
+    padding-right: 26px;
     width: 320px;
   }
 }

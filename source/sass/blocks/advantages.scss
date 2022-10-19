@@ -1,0 +1,60 @@
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.advantages__header {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.advantages__item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 95px 45px 35px;
+  border: 1px solid $whisper;
+  border-left: 5px solid $deep-sky-blue-2;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus,
+    &:hover h3,
+    &:focus h3 {
+      background-color: $deep-sky-blue-2;
+      color: $alice-blue;
+      fill: $alice-blue;
+    }
+  }
+}
+
+.advantages__item h3,
+.advantages__item-header {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+
+  color: $deep-sky-blue-2;
+}
+
+.advantages__item p,
+.advantages__item-description {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+}

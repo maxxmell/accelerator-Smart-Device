@@ -12,153 +12,160 @@
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="main-header">
-        <div class="main-header__container container">
-          <a class="main-header__logo-link">
-            <img class="main-header__logo-img" src="img/svg/logo-img.svg" width="55" height="55" alt="Интернет-магазин Smart Device.">
-            <img class="main-header__logo-text" src="img/svg/logo-text.svg" width="145" height="45">
-          </a>
-          <ul class="main-header__contacts-list contacts-list">
-            <li class="contacts-list__item contacts-list__item--mail">
-              <a class="contacts-list__link" href="mailto:info@sd.ru">
-                <span class="contact-list__info">info@sd.ru</span>
-              </a>
+    <header class="main-header">
+      <div class="main-header__container container">
+        <a class="main-header__logo-link">
+          <img class="main-header__logo-img" src="img/svg/logo-img.svg" width="55" height="55" alt="Интернет-магазин Smart Device.">
+          <img class="main-header__logo-text" src="img/svg/logo-text.svg" width="145" height="45">
+        </a>
+        <ul class="main-header__contacts-list contacts-list">
+          <li class="contacts-list__item contacts-list__item--mail">
+            <a class="contacts-list__link" href="mailto:info@sd.ru">
+              <span class="contact-list__info">info@sd.ru</span>
+            </a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--phone">
+            <a class="contacts-list__link" href="tel:+79999999999">
+              <span class="contact-list__info">+7 (999) 999-99-99</span>
+            </a>
+          </li>
+        </ul>
+        <a class="main-header__callback-button btn btn--white-border" href="#" data-open-modal="callback">Заказать звонок</a>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1 class="main-container__header visually-hidden">Smart Device Производство и монтаж, поставка комплектующих, блоков и модулей</h1>
+      <section class="main-container__intro intro">
+        <div class="intro__container container">
+            <h2 class="intro__header">Печатные платы</h2>
+            <p class="intro__description">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+            <a class="intro__feedback-button btn btn--blue" href="#feedback" data-scroll-to="feedback">Получить бесплатную консультацию</a>
+        </div>
+      </section>
+      <a name="feedback"></a>
+      <section class="main-container__advantages advantages">
+        <div class="advantages__container container">
+          <h2 class="advantages__header visually-hidden">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__item-header">Оперативные сроки </h3>
+              <p class="advantages__item-description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
             </li>
-            <li class="contacts-list__item contacts-list__item--phone">
-              <a class="contacts-list__link" href="tel:+79999999999">
-                <span class="contact-list__info">+7 (999) 999-99-99</span>
-              </a>
+            <li class="advantages__item">
+              <h3 class="advantages__item-header">Крупные поставщики</h3>
+              <p class="advantages__item-description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__item-header">Полная конфиденциальность</h3>
+              <p class="advantages__item-description">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__item-header">Персонализация стоимости</h3>
+              <p class="advantages__item-description">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
             </li>
           </ul>
-          <a class="main-header__callback-button btn btn--white-border" href="#" data-open-modal="success">Заказать звонок</a>
         </div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
-      </main>
-      <footer class="main-footer">
-        <div class="main-footer__container container">
-          <div class="main-footer__wrapper">
-            <a class="main-footer__logo-link">
-              <img class="main-footer__logo-img" src="img/svg/logo-img.svg" width="55" height="55" alt="Интернет-магазин Smart Device.">
-              <img class="main-footer__logo-text" src="img/svg/logo-text.svg" width="145" height="45">
-            </a>
-            <div class="main-footer__social social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link social__link--ok" href="https://ok.ru/htmlacademy">
-                    <span class="visually-hidden">Одноклассники.</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-                    <span class="visually-hidden">Вконтакте.</span>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--pinterest" href="https://pinterest.com/htmlacademy">
-                    <span class="visually-hidden">Pinterest.</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="main-footer__navigation accordion">
-            <nav class="main-footer__eshop-nav">
-              <h4 class="main-footer__navigation__header accordion__header">Разделы сайта</h4>
-              <ul class="main-footer__navigation-list accordion__block">
-                <li class="main-footer__navigation-item">
-                  <a href="#" class="main-footer__navigation-link">
-                    О Компаниии
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="#" class="main-footer__navigation-link">
-                    Продукты
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="#" class="main-footer__navigation-link">
-                    Производство печатных плат
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="#" class="main-footer__navigation-link">
-                    Монтаж печатных плат
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="#" class="main-footer__navigation-link">
-                    Комплектующие
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="#" class="main-footer__navigation-link">
-                    Доставка
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="#" class="main-footer__navigation-link">
-                    Контакты
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="main-footer__contacts">
-              <h4 class="main-footer__navigation__header accordion__header">Наш офис</h4>
-              <ul class="main-footer__navigation-list accordion__block">
-                <li class="main-footer__navigation-item">
-                  <a class="main-footer__navigation-link">
-                    г. Мытищи, Олимпийский проспект, д.10
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="tel:+74955894050" class="main-footer__navigation-link">
-                    +7 (495) 589-40-50
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="tel:+79253895829" class="main-footer__navigation-link">
-                    +7 (925) 389-58-29
-                  </a>
-                </li>
-                <li class="main-footer__navigation-item">
-                  <a href="tel:+79253647813" class="main-footer__navigation-link">
-                    +7 (925) 364-78-13
-                  </a>
-                </li>
-              </ul>
-            </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container container">
+        <div class="main-footer__wrapper">
+          <a class="main-footer__logo-link">
+            <img class="main-footer__logo-img" src="img/svg/logo-img.svg" width="55" height="55" alt="Интернет-магазин Smart Device.">
+            <img class="main-footer__logo-text" src="img/svg/logo-text.svg" width="145" height="45">
+          </a>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--ok" href="https://ok.ru/htmlacademy">
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--pinterest" href="https://pinterest.com/htmlacademy">
+                  <span class="visually-hidden">Pinterest.</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
+        <div class="main-footer__navigation accordion">
+          <nav class="main-footer__eshop-nav">
+            <h4 class="main-footer__navigation__header accordion__header">Разделы сайта</h4>
+            <ul class="main-footer__navigation-list accordion__block">
+              <li class="main-footer__navigation-item">
+                <a href="#" class="main-footer__navigation-link">
+                  О Компаниии
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="#" class="main-footer__navigation-link">
+                  Продукты
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="#" class="main-footer__navigation-link">
+                  Производство печатных плат
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="#" class="main-footer__navigation-link">
+                  Монтаж печатных плат
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="#" class="main-footer__navigation-link">
+                  Комплектующие
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="#" class="main-footer__navigation-link">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="#" class="main-footer__navigation-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-footer__contacts">
+            <h4 class="main-footer__navigation__header accordion__header">Наш офис</h4>
+            <ul class="main-footer__navigation-list accordion__block">
+              <li class="main-footer__navigation-item">
+                <a class="main-footer__navigation-link">
+                  г. Мытищи, Олимпийский проспект, д.10
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="tel:+74955894050" class="main-footer__navigation-link">
+                  +7 (495) 589-40-50
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="tel:+79253895829" class="main-footer__navigation-link">
+                  +7 (925) 389-58-29
+                </a>
+              </li>
+              <li class="main-footer__navigation-item">
+                <a href="tel:+79253647813" class="main-footer__navigation-link">
+                  +7 (925) 364-78-13
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <!-- Модалки -->
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="callback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">

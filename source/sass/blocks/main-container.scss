@@ -1,0 +1,29 @@
+.main-container {
+  min-height: 100%;
+}
+
+.main-container__intro {
+  position: relative;
+  min-height: 760px;
+  color: $alice-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 880px;
+    background: $top-to-bottom-filter, url("../img/background/main/background-main-desktop.jpg"), $black-pearl;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -120px;
+    z-index: -1;
+  }
+}
+
+.main-container__advantages {
+  min-height: 630px;
+  color: $black-pearl;
+  background-color: $alice-blue-2;
+}
