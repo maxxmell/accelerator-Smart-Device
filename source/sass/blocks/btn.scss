@@ -2,9 +2,11 @@
   display: inline-flex;
   box-sizing: border-box;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 10px 15px;
   min-width: 100px;
+  min-height: 20px;
   max-width: max-content;
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -40,6 +42,12 @@
     color: $alice-blue;
   }
 
+  &--blue-border {
+    background-color: $alice-blue-2;
+    border: 1px solid $deep-sky-blue-2;
+    color: $deep-sky-blue-2;
+  }
+
   &:disabled {
     opacity: 0.5;
 
@@ -49,7 +57,7 @@
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {
-      opacity: 0.8;
+      opacity: 0.7;
     }
   }
 }

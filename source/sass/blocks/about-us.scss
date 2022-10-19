@@ -1,0 +1,47 @@
+.about-us {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  padding-left: 250px;
+}
+
+.about-us__container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 320px;
+    background-image: url("../img/background/2022.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.about-us__header {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-us__item p,
+.about-us__item-description {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-us__button {
+  margin-top: 20px;
+  min-width: 180px;
+  min-height: 45px;
+}

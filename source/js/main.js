@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import renderAccordion from './modules/accordion';
+import renderDropdown from './modules/dropdown';
 
 const maxViewport = 767;
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     renderAccordion('accordion', maxViewport);
+    renderDropdown('dropdown');
   });
 });
 
