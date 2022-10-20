@@ -1,0 +1,100 @@
+.callback-form {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  column-gap: 30px;
+  row-gap: 20px;
+  background-color: #00b3ff;
+}
+
+.callback-form input,
+.callback-form textarea {
+  box-sizing: border-box;
+  padding: 15px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-black;
+  width: 100%;
+
+  background: rgba(4, 20, 39, 0.15);
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.callback-form textarea {
+  padding: 25px 15px;
+  grid-column: span 2;
+}
+
+.callback-form input[type="checkbox"] {
+  @extend.visually-hidden;
+}
+
+.callback-form input[type="checkbox"] + label {
+  display: inline-flex;
+  align-items: center;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  user-select: none;
+  cursor: pointer;
+}
+
+.callback-form input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.callback-form input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/svg/icon-tick.svg");
+}
+
+/* стили при наведении курсора на checkbox */
+.callback-form input[type="checkbox"]:not(:disabled) + label:hover::before {
+  opacity: 0.7;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.callback-form input[type="checkbox"]:focus + label::before {
+  opacity: 0.7;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.callback-form input[type="checkbox"]:disabled + label,
+.callback-form input[type="checkbox"]:disabled + label::before {
+  opacity: 0.3;
+}

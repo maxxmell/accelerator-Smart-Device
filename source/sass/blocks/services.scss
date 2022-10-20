@@ -1,0 +1,79 @@
+.services {
+  padding-top: 70px;
+  padding-bottom: 140px;
+}
+
+.services__header {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.services__list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  gap: 85px;
+}
+
+.services__item {
+  margin: 0;
+}
+
+.services__link {
+  display: block;
+  padding: 50px 80px 80px 40px;
+  width: 350px;
+  min-height: 650px;
+  color: $color-default-white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $shades-of-silver;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/svg/icon-tick-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 4px 8px;
+    background-color: $deep-sky-blue-2;
+    border-radius: 3px 0 0 0;
+  }
+}
+
+.services__link--1 {
+  background: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-1-desktop.jpg");
+}
+
+.services__link--2 {
+  background: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-2-desktop.jpg");
+}
+
+.services__link--3 {
+  background: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-3-desktop.jpg");
+}
+
+.services__item p,
+.services__info {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
