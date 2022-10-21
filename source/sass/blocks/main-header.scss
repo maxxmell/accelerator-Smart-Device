@@ -9,7 +9,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   display: grid;
-  align-items: center;
+  align-items: flex-start;
   grid-auto-flow: row dense;
   grid-template-columns: minmax(220px, max-content) minmax(480px, 1fr) minmax(220px, max-content);
   gap: 20px;
@@ -53,6 +53,8 @@
 
 .main-header__callback-button {
   margin: 5px 60px 10px 0;
+  min-width: 160px;
+  min-height: 40px;
 
   @include vp-1279 {
     display: none;

@@ -1,12 +1,10 @@
 .intro__container {
-  padding-top: 185px;
+  padding-top: 184px;
 }
 
 .intro h2,
 .intro__header {
-  margin: 0;
-  margin-left: 125px;
-  margin-bottom: 40px;
+  margin: 0 50px 32px 125px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -19,19 +17,22 @@
 .intro p,
 .intro__description {
   width: 670px;
-  margin: 0;
-  margin-left: 125px;
-  margin-bottom: 40px;
+  margin: 0 50px 45px 125px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
-  line-height: 155%;
+  line-height: 35px;
 }
 
 .intro__feedback-button {
-  margin: 0;
-  margin-left: 125px;
-  margin-bottom: 40px;
-  min-height: 25px;
+  margin: 0 50px 40px 125px;
+  padding: 15px 25px;
+  min-height: 55px;
+  min-width: 210px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }

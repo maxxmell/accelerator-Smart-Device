@@ -46,8 +46,13 @@
   }
 }
 
-.main-header__logo-text {
+.main-footer__logo-text {
   margin-left: 15px;
+}
+
+.main-footer__social {
+  align-self: center;
+  margin: 0 10px;
 }
 
 .main-footer__navigation {
@@ -55,7 +60,7 @@
   box-sizing: border-box;
   min-height: 130px;
   min-width: 470px;
-  padding-top: 50px;
+  padding-top: 57px;
   padding-bottom: 50px;
   display: grid;
   align-items: flex-start;
@@ -74,74 +79,4 @@
     display: block;
     min-width: 260px;
   }
-}
-
-.main-footer__navigation__header {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
-  @include vp-767 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-.main-footer__navigation-list {
-  list-style: none;
-  padding: 0;
-  min-width: 220px;
-  display: grid;
-  align-items: flex-start;
-  grid-template-columns: repeat(auto-fit, 220px);
-  gap: 30px;
-
-  @include vp-1279 {
-    grid-template-columns: 1fr;
-  }
-}
-
-.main-footer__navigation-item {
-  width: 220px;
-}
-
-.main-footer__navigation-list a {
-  min-height: 20px;
-  display: flex;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: rgba(255, 255, 255, 0.7);
-
-  @media (hover: hover), screen and (min-width: 0\0) {
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-  }
-}
-
-.main-footer__eshop-nav .main-footer__navigation-list {
-  min-width: 470px;
-
-  @include vp-1279 {
-    min-width: 220px;
-  }
-}
-
-.main-footer__contacts .main-footer__navigation-list {
-  @include vp-1279 {
-    min-width: 320px;
-  }
-}
-
-.main-footer__contacts a {
-  min-width: 260px;
 }

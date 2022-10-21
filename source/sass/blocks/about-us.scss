@@ -4,8 +4,10 @@
 }
 
 .about-us__wrapper {
+  box-sizing: border-box;
   padding-left: 250px;
   position: relative;
+  min-height: 320px;
 
   &::before {
     content: "";
@@ -23,7 +25,7 @@
 
 .about-us__header {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12.5px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -37,11 +39,11 @@
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21.5px;
 }
 
 .about-us__button {
-  margin-top: 20px;
+  margin-top: 18px;
   min-width: 180px;
   min-height: 45px;
 }

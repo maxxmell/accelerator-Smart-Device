@@ -24,7 +24,8 @@
 .advantages__item {
   position: relative;
   box-sizing: border-box;
-  padding: 95px 45px 35px;
+  padding: 95px 42px 35px;
+  min-height: 300px;
   border: 1px solid $whisper;
   border-left: 5px solid $deep-sky-blue-2;
 
@@ -42,16 +43,20 @@
 
 .advantages__item h3,
 .advantages__item-header {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 140%;
+  line-height: 34px;
 
   color: $deep-sky-blue-2;
 }
 
 .advantages__item p,
 .advantages__item-description {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;

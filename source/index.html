@@ -10,6 +10,10 @@
     <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="icon.webmanifest">
   </head>
   <body>
     <header class="main-header">
@@ -26,7 +30,7 @@
           </li>
           <li class="contacts-list__item contacts-list__item--phone">
             <a class="contacts-list__link" href="tel:+79999999999">
-              <span class="contact-list__info">+7 (999) 999-99-99</span>
+              <span class="contact-list__info">+7 (495) 000-52-52</span>
             </a>
           </li>
         </ul>
@@ -60,7 +64,7 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__item-header">Персонализация стоимости</h3>
-              <p class="advantages__item-description">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
+              <p class="advantages__item-description">Мы&nbsp;  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
             </li>
           </ul>
         </div>
@@ -107,7 +111,7 @@
           <div class="feedback__wrapper">
             <h2 class="feedback__header">Остались вопросы? Задайте их нам!</h2>
             <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
-            <form class="callback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="feedback__form callback-form" action="https://echo.htmlacademy.ru/" method="post">
               <input type="text" name="name"
               pattern="[A-Z,a-z,А-Я,а-я]"
               minlength="1"
@@ -125,7 +129,6 @@
         </div>
       </section>
     </main>
-
     <footer class="main-footer">
       <div class="main-footer__container container">
         <div class="main-footer__wrapper">
@@ -154,66 +157,71 @@
           </div>
         </div>
         <div class="main-footer__navigation accordion">
-          <nav class="main-footer__eshop-nav">
-            <h4 class="main-footer__navigation__header accordion__header">Разделы сайта</h4>
-            <ul class="main-footer__navigation-list accordion__block">
-              <li class="main-footer__navigation-item">
-                <a href="#" class="main-footer__navigation-link">
-                  О Компаниии
-                </a>
-              </li>
-              <li class="main-footer__navigation-item">
-                <a href="#" class="main-footer__navigation-link">
-                  Продукты
-                </a>
-              </li>
-              <li class="main-footer__navigation-item">
-                <a href="#" class="main-footer__navigation-link">
-                  Производство печатных плат
-                </a>
-              </li>
-              <li class="main-footer__navigation-item">
-                <a href="#" class="main-footer__navigation-link">
-                  Монтаж печатных плат
-                </a>
-              </li>
-              <li class="main-footer__navigation-item">
-                <a href="#" class="main-footer__navigation-link">
-                  Комплектующие
-                </a>
-              </li>
-              <li class="main-footer__navigation-item">
-                <a href="#" class="main-footer__navigation-link">
-                  Доставка
-                </a>
-              </li>
-              <li class="main-footer__navigation-item">
-                <a href="#" class="main-footer__navigation-link">
-                  Контакты
-                </a>
-              </li>
+          <nav class="main-footer__eshop-nav footer-navigation footer-navigation--eshop">
+            <h4 class="footer-navigation__header accordion__header">Разделы сайта</h4>
+            <ul class="footer-navigation__list accordion__block">
+              <div class="footer-navigation-column-wrapper">
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">
+                    О Компании
+                  </a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">
+                    Продукты
+                  </a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">
+                    Производство печатных плат
+                  </a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">
+                    Монтаж печатных плат
+                  </a>
+                </li>
+              </div>
+              <div class="footer-navigation-column-wrapper">
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">
+                    Комплектующие
+                  </a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a href="#" class="footer-navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </div>
+
             </ul>
           </nav>
-          <div class="main-footer__contacts">
-            <h4 class="main-footer__navigation__header accordion__header">Наш офис</h4>
-            <ul class="main-footer__navigation-list accordion__block">
-              <li class="main-footer__navigation-item">
-                <a class="main-footer__navigation-link">
+          <div class="main-footer__contacts footer-navigation footer-navigation--contacts">
+            <h4 class="footer-navigation__header accordion__header">Наш офис</h4>
+            <ul class="footer-navigation__list accordion__block">
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link">
                   г. Мытищи, Олимпийский проспект, д.10
                 </a>
               </li>
-              <li class="main-footer__navigation-item">
-                <a href="tel:+74955894050" class="main-footer__navigation-link">
+              <li class="footer-navigation__item">
+                <a href="tel:+74955894050" class="footer-navigation__link">
                   +7 (495) 589-40-50
                 </a>
               </li>
-              <li class="main-footer__navigation-item">
-                <a href="tel:+79253895829" class="main-footer__navigation-link">
+              <li class="footer-navigation__item">
+                <a href="tel:+79253895829" class="footer-navigation__link">
                   +7 (925) 389-58-29
                 </a>
               </li>
-              <li class="main-footer__navigation-item">
-                <a href="tel:+79253647813" class="main-footer__navigation-link">
+              <li class="footer-navigation__item">
+                <a href="tel:+79253647813" class="footer-navigation__link">
                   +7 (925) 364-78-13
                 </a>
               </li>

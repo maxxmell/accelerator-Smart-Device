@@ -1,5 +1,5 @@
 .feedback {
-  padding-top: 170px;
+  padding-top: 165px;
   padding-bottom: 250px;
 }
 
@@ -11,7 +11,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 76px;
+    top: 80px;
     left: 0;
     width: 510px;
     height: 285px;
@@ -26,7 +26,7 @@
 .feedback__header,
 .feedback h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -37,8 +37,14 @@
 .feedback p {
   margin: 0;
   margin-bottom: 15px;
+  margin-left: 5px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+.feedback__form {
+  margin: 35px 5px 0;
+  width: 580px;
 }

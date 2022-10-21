@@ -14,11 +14,11 @@
 .callback-form input,
 .callback-form textarea {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 13px 13px 15px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   color: $color-default-black;
   width: 100%;
 
@@ -45,8 +45,21 @@
 }
 
 .callback-form textarea {
-  padding: 25px 15px;
+  padding: 23px 14px;
   grid-column: span 2;
+  min-height: 155px;
+}
+
+.callback-form button[type="submit"] {
+  min-width: 265px;
+  min-height: 45px;
+  margin-top: 15px;
+  padding-top: 13px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .callback-form input[type="checkbox"] {
@@ -56,6 +69,8 @@
 .callback-form input[type="checkbox"] + label {
   display: inline-flex;
   align-items: center;
+  margin-bottom: -2px;
+  margin-left: 10px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -63,6 +78,7 @@
   color: rgba(255, 255, 255, 0.8);
   user-select: none;
   cursor: pointer;
+  align-self: end;
 }
 
 .callback-form input[type="checkbox"] + label::before {
@@ -74,6 +90,7 @@
   flex-grow: 0;
   border: 1px solid $color-default-white;
   border-radius: 2px;
+  margin-bottom: 4px;
   margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center center;
