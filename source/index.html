@@ -13,7 +13,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-    <link rel="manifest" href="icon.webmanifest">
+    <link rel="manifest" href="/icon.webmanifest">
   </head>
   <body>
     <header class="main-header">
@@ -50,19 +50,19 @@
         <div class="advantages__container container">
           <h2 class="advantages__header visually-hidden">Преимущества</h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--time">
               <h3 class="advantages__item-header">Оперативные сроки </h3>
               <p class="advantages__item-description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--providers">
               <h3 class="advantages__item-header">Крупные поставщики</h3>
               <p class="advantages__item-description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--confidential">
               <h3 class="advantages__item-header">Полная конфиденциальность</h3>
               <p class="advantages__item-description">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--personalisation">
               <h3 class="advantages__item-header">Персонализация стоимости</h3>
               <p class="advantages__item-description">Мы&nbsp;  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
             </li>
@@ -94,7 +94,7 @@
             </li>
             <li class="services__item">
               <a href="" class="services__link services__link--2">
-                <p class="services__info">Монтаж печатных<br> плат</p>
+                <p class="services__info">Монтаж<br class="break break--no-desktop"> печатных<br class="break break--desktop-only"> плат</p>
               </a>
             </li>
             <li class="services__item">
@@ -105,15 +105,15 @@
           </ul>
         </div>
       </section>
+      <a name="feedback"></a>
       <section class="main-container__feedback feedback">
-        <a name="feedback"></a>
         <div class="feedback__container container">
           <div class="feedback__wrapper">
             <h2 class="feedback__header">Остались вопросы? Задайте их нам!</h2>
             <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
             <form class="feedback__form callback-form" action="https://echo.htmlacademy.ru/" method="post">
               <input type="text" name="name"
-              pattern="[A-Z,a-z,А-Я,а-я]"
+              pattern="^[а-яА-ЯёЁa-zA-Z]+$"
               minlength="1"
               placeholder="Имя" required title="Русские буквы или Латиница">
               <input type="tel" name="phone"
@@ -232,13 +232,13 @@
     </footer>
 
     <!-- Модалки -->
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="callback">
+    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="callback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <form class="callback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="feedback__form callback-form" action="https://echo.htmlacademy.ru/" method="post">
             <input type="text" name="name"
-            pattern="[A-Z,a-z,А-Я,а-я]"
+            pattern="^[а-яА-ЯёЁa-zA-Z]+$"
             minlength="1"
             placeholder="Имя" required title="Русские буквы или Латиница">
             <input type="tel" name="phone"
@@ -257,7 +257,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

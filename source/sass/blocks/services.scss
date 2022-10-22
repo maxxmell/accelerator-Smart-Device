@@ -1,6 +1,16 @@
 .services {
   padding-top: 66px;
   padding-bottom: 140px;
+
+  @include vp-1279 {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  @include vp-1023 {
+    padding-top: 54px;
+    padding-bottom: 75px;
+  }
 }
 
 .services__header {
@@ -10,6 +20,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+
+  @include vp-1023 {
+    margin-bottom: 39px;
+  }
 }
 
 .services__list {
@@ -20,6 +34,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
   gap: 85px;
+
+  @include vp-1279 {
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 .services__item {
@@ -43,6 +63,17 @@
 
   position: relative;
 
+  @include vp-1279 {
+    width: auto;
+    min-width: 670px;
+    min-height: 250px;
+    padding: 40px 80px 80px 45px;
+  }
+
+  @include vp-1023 {
+    padding: 37px 80px 80px 45px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -60,15 +91,27 @@
 }
 
 .services__link--1 {
-  background: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-1-desktop.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-1-desktop.jpg");
+
+  @include vp-1279 {
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-1-tablet.jpg");
+  }
 }
 
 .services__link--2 {
-  background: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-2-desktop.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-2-desktop.jpg");
+
+  @include vp-1279 {
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-2-tablet.jpg");
+  }
 }
 
 .services__link--3 {
-  background: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-3-desktop.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-3-desktop.jpg");
+
+  @include vp-1279 {
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-3-tablet.jpg");
+  }
 }
 
 .services__item p,

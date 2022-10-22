@@ -1,12 +1,27 @@
 .feedback {
   padding-top: 165px;
   padding-bottom: 250px;
+
+  @include vp-1279 {
+    padding-top: 50px;
+    padding-bottom: 125px;
+  }
+
+  @include vp-1023 {
+    padding-top: 45px;
+    padding-bottom: 115px;
+  }
 }
 
 .feedback__wrapper {
   min-height: 420px;
   padding-left: 625px;
   position: relative;
+
+  @include vp-1279 {
+    padding-left: 0;
+    min-height: 420px;
+  }
 
   &::before {
     content: "";
@@ -20,6 +35,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+
+    @include vp-1279 {
+      content: none;
+    }
   }
 }
 
@@ -31,6 +50,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
 }
 
 .feedback__description,
@@ -42,9 +65,18 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+
+  @include vp-1023 {
+    margin-left: -1px;
+  }
 }
 
 .feedback__form {
   margin: 35px 5px 0;
   width: 580px;
+
+  @include vp-1279 {
+    width: 100%;
+    margin: 25px auto 0;
+  }
 }

@@ -1,6 +1,11 @@
 .advantages {
   padding-top: 120px;
   padding-bottom: 60px;
+
+  @include vp-1023 {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }
 
 .advantages__header {
@@ -19,6 +24,10 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(270px, 1fr));
   gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+  }
 }
 
 .advantages__item {
@@ -28,6 +37,11 @@
   min-height: 300px;
   border: 1px solid $whisper;
   border-left: 5px solid $deep-sky-blue-2;
+
+  @include vp-1023 {
+    padding: 95px 40px 15px;
+    min-height: 360px;
+  }
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
@@ -51,6 +65,16 @@
   line-height: 34px;
 
   color: $deep-sky-blue-2;
+
+  @include vp-1023 {
+    margin-bottom: 13px;
+    line-height: 25px;
+  }
+}
+
+.advantages__item--confidential h3,
+.advantages__item--confidential .advantages__item-header {
+  line-height: 27.5px;
 }
 
 .advantages__item p,

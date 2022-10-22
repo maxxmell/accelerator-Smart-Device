@@ -7,6 +7,10 @@
   min-height: 760px;
   color: $alice-blue;
 
+  @include vp-1023 {
+    min-height: 540px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -19,6 +23,12 @@
     background-size: cover;
     margin-top: -120px;
     z-index: -1;
+
+    @include vp-1023 {
+      min-height: 640px;
+      margin-top: -100px;
+      background: $top-to-bottom-filter, url("../img/background/main/background-main-tablet.jpg"), $black-pearl;
+    }
   }
 }
 
@@ -26,22 +36,42 @@
   min-height: 630px;
   color: $black-pearl;
   background-color: $alice-blue-2;
+
+  @include vp-1023 {
+    min-height: 670px;
+  }
 }
 
 .main-container__about-us {
   min-height: 320px;
   color: $black-pearl;
   background-color: $alice-blue-2;
+
+  @include vp-1023 {
+    min-height: 380px;
+  }
 }
 
 .main-container__services {
   min-height: 750px;
   color: $alice-blue-2;
   background-color: $black-pearl;
+
+  @include vp-1023 {
+    min-height: 945px;
+  }
 }
 
 .main-container__feedback {
   min-height: 580px;
   color: $color-default-white;
   background: linear-gradient(139.2deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 33.7%, rgba(255, 255, 255, 0) 33.8%, rgba(255, 255, 255, 0) 100%), $deep-sky-blue;
+
+  @include vp-1279 {
+    background: $deep-sky-blue;
+  }
+
+  @include vp-1023 {
+    min-height: 550px;
+  }
 }

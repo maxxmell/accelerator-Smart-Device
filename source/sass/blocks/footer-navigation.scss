@@ -38,7 +38,7 @@
 }
 
 .footer-navigation--contacts .footer-navigation__item {
-  width: 345px;
+  width: 320px;
 }
 
 .footer-navigation__list a {
@@ -68,7 +68,7 @@
 }
 
 .footer-navigation--contacts .footer-navigation__list {
-  grid-template-columns: repeat(auto-fit, 345px);
+  grid-template-columns: repeat(auto-fit, 320px);
 
   @include vp-1279 {
     min-width: 320px;

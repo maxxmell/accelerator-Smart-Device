@@ -20,6 +20,11 @@
     min-width: 100px;
     min-height: 100px;
   }
+
+  @include vp-1023 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .main-header__logo-link {
@@ -48,6 +53,10 @@
 
   @include vp-1279 {
     justify-self: end;
+  }
+
+  @include vp-1023 {
+    margin-right: 23px;
   }
 }
 

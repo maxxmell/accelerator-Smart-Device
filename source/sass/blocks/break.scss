@@ -1,0 +1,13 @@
+.break--no-desktop {
+  display: none;
+
+  @include vp-1279 {
+    display: block;
+  }
+}
+
+.break--desktop-only {
+  @include vp-1279 {
+    display: none;
+  }
+}
