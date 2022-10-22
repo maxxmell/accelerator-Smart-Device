@@ -28,6 +28,9 @@
       min-height: 640px;
       margin-top: -100px;
       background: $top-to-bottom-filter, url("../img/background/main/background-main-tablet.jpg"), $black-pearl;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }

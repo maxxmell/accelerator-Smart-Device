@@ -33,7 +33,7 @@
 .advantages__item {
   position: relative;
   box-sizing: border-box;
-  padding: 95px 42px 35px;
+  padding: 96px 42px 35px;
   min-height: 300px;
   border: 1px solid $whisper;
   border-left: 5px solid $deep-sky-blue-2;
@@ -47,7 +47,9 @@
     &:hover,
     &:focus,
     &:hover h3,
-    &:focus h3 {
+    &:focus h3,
+    &:hover .advantages__item-icon,
+    &:focus .advantages__item-icon {
       background-color: $deep-sky-blue-2;
       color: $alice-blue;
       fill: $alice-blue;
@@ -55,10 +57,31 @@
   }
 }
 
+.advantages__item-icon {
+  position: absolute;
+  top: 40px;
+  left: 42px;
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  fill: $deep-sky-blue-2;
+}
+
+.advantages__item--confidential .advantages__item-icon {
+  left: 35px;
+
+  @include vp-1023 {
+    left: 40px;
+  }
+}
+
 .advantages__item h3,
 .advantages__item-header {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -74,7 +97,9 @@
 
 .advantages__item--confidential h3,
 .advantages__item--confidential .advantages__item-header {
-  line-height: 27.5px;
+  @include vp-1023 {
+    line-height: 27.5px;
+  }
 }
 
 .advantages__item p,

@@ -48,6 +48,10 @@
   padding: 23px 14px;
   grid-column: span 2;
   min-height: 155px;
+
+  @include vp-1023 {
+    padding: 30px 14px 14px;
+  }
 }
 
 .callback-form button[type="submit"] {
@@ -79,6 +83,11 @@
   user-select: none;
   cursor: pointer;
   align-self: end;
+
+  @include vp-1023 {
+    margin-bottom: 3px;
+    margin-left: 0;
+  }
 }
 
 .callback-form input[type="checkbox"] + label::before {
