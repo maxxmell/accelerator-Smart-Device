@@ -6,6 +6,11 @@
     padding-top: 80px;
     padding-bottom: 40px;
   }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
 }
 
 .advantages__header {
@@ -47,6 +52,11 @@
     min-height: 360px;
   }
 
+  @include vp-767 {
+    padding: 75px 25px 15px;
+    min-height: 340px;
+  }
+
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus,
@@ -61,6 +71,13 @@
   }
 }
 
+.advantages__item--confidential,
+.advantages__item--personalisation {
+  @include vp-767 {
+    min-height: 325px;
+  }
+}
+
 .advantages__item-icon {
   position: absolute;
   top: 40px;
@@ -72,6 +89,13 @@
   background-size: cover;
   z-index: 1;
   fill: $deep-sky-blue-2;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+    top: 29px;
+    left: 24px;
+  }
 }
 
 .advantages__item--confidential .advantages__item-icon {
@@ -79,6 +103,10 @@
 
   @include vp-1023 {
     left: 40px;
+  }
+
+  @include vp-767 {
+    left: 24px;
   }
 }
 
@@ -97,12 +125,32 @@
     margin-bottom: 13px;
     line-height: 25px;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
 }
 
 .advantages__item--confidential h3,
 .advantages__item--confidential .advantages__item-header {
   @include vp-1023 {
     line-height: 27.5px;
+  }
+
+  @include vp-767 {
+    line-height: 28px;
+  }
+}
+
+.advantages__item--confidential h3,
+.advantages__item--confidential .advantages__item-header,
+.advantages__item--personalisation h3,
+.advantages__item--personalisation .advantages__item-header {
+  @include vp-767 {
+    margin-top: 3px;
+    margin-bottom: 14px;
   }
 }
 
@@ -114,4 +162,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 135%;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
 }

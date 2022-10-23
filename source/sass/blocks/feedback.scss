@@ -11,6 +11,11 @@
     padding-top: 45px;
     padding-bottom: 115px;
   }
+
+  @include vp-767 {
+    padding-top: 47px;
+    padding-bottom: 88px;
+  }
 }
 
 .feedback__wrapper {
@@ -54,6 +59,12 @@
   @include vp-1023 {
     margin-bottom: 7px;
   }
+
+  @include vp-767 {
+    margin-bottom: 9px;
+    font-size: 30px;
+    line-height: 140.62%;
+  }
 }
 
 .feedback__description,
@@ -69,6 +80,11 @@
   @include vp-1023 {
     margin-left: -1px;
   }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
 }
 
 .feedback__form {
@@ -78,5 +94,9 @@
   @include vp-1279 {
     width: 100%;
     margin: 25px auto 0;
+  }
+
+  @include vp-767 {
+    margin: 33px auto 0;
   }
 }

@@ -8,8 +8,8 @@
   }
 
   @include vp-767 {
-    padding-top: 25px;
-    padding-bottom: 40px;
+    padding-top: 22px;
+    padding-bottom: 80px;
   }
 }
 
@@ -25,6 +25,8 @@
   }
 
   @include vp-767 {
+    display: flex;
+    flex-direction: column;
     padding-left: 0;
     min-height: 305px;
   }
@@ -52,6 +54,24 @@
   }
 }
 
+.about-us__wrapper p:nth-of-type(2) {
+  &::after {
+    content: "Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.";
+
+    @include vp-767 {
+      content: none;
+    }
+  }
+}
+
+.about-us__hidden p:nth-of-type(1) {
+  &::before {
+    @include vp-767 {
+      content: "Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.";
+    }
+  }
+}
+
 .about-us__header {
   margin: 0;
   margin-bottom: 12.5px;
@@ -66,7 +86,7 @@
   }
 }
 
-.about-us p,
+.about-us > p,
 .about-us__description {
   margin: 0;
   margin-bottom: 22px;
@@ -78,6 +98,7 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 134.4%;
+    margin-bottom: 20px;
   }
 }
 
@@ -88,5 +109,14 @@
 
   @include vp-1023 {
     margin-top: -4px;
+  }
+
+  @include vp-767 {
+    margin-top: -6px;
+    padding: 8px 15px 9px;
+    min-width: 160px;
+    min-height: 35px;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
