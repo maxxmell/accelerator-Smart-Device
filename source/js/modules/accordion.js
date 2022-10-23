@@ -3,6 +3,10 @@ function renderAccordion(targetClass, maxViewport) {
   let accordion = document.querySelector(`.${targetClass}`);
   hideAll();
 
+  if (viewportWidth < maxViewport) {
+    accordion.addEventListener('click', change);
+  }
+
   window.addEventListener('resize', function () {
     viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     if (viewportWidth < maxViewport) {
