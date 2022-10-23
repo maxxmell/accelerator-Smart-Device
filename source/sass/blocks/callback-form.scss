@@ -9,6 +9,10 @@
   column-gap: 30px;
   row-gap: 20px;
   background-color: #00b3ff;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .callback-form input,
@@ -51,6 +55,10 @@
 
   @include vp-1023 {
     padding: 30px 14px 14px;
+  }
+
+  @include vp-767 {
+    grid-column: span 1;
   }
 }
 

@@ -11,6 +11,11 @@
     min-height: 540px;
   }
 
+  @include vp-767 {
+    min-width: 320px;
+    min-height: 490px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -32,6 +37,15 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+    @include vp-767 {
+      min-height: 560px;
+      margin-top: -70px;
+      background: $top-to-bottom-filter, url("../img/background/main/background-main-mobile.jpg"), $black-pearl;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -43,6 +57,11 @@
   @include vp-1023 {
     min-height: 670px;
   }
+
+  @include vp-767 {
+    min-width: 320px;
+    min-height: 340px;
+  }
 }
 
 .main-container__about-us {
@@ -52,6 +71,11 @@
 
   @include vp-1023 {
     min-height: 380px;
+  }
+
+  @include vp-767 {
+    min-width: 320px;
+    min-height: 305px;
   }
 }
 
