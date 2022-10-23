@@ -43,6 +43,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @include retina {
+      background-image: url("../img/background/2022@2x.jpg");
+    }
+
     @include vp-1023 {
       top: 5px;
       left: -4px;

@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba($black-pearl-3, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -57,23 +57,26 @@
   }
 
   &__content {
+    display: block;
+    box-sizing: border-box;
     position: relative;
+    padding: 38px 40px 42px;
+    width: 500px;
 
-    width: 600px;
-    padding: 40px;
-
-    background-color: $color-default-white;
+    color: $color-default-white;
+    background-color: $deep-sky-blue;
 
     @include vp-767 {
-      width: 100%;
-      padding: 20px;
+      padding: 25px;
+      min-width: 320px;
+      min-height: 610px;
     }
   }
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 15px;
+    right: 15px;
     z-index: 1;
 
     width: 40px;
@@ -83,22 +86,6 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
-  }
-
-  &--responsive {
-    .modal__content {
-      width: 100%;
-    }
-  }
-
-  &--fit-content {
-    .modal__content {
-      width: auto;
-
-      @include vp-767 {
-        width: 100%;
-      }
-    }
   }
 
   &--no-scale {
@@ -116,4 +103,48 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__header {
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 3px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140.62%;
+}
+
+.modal__description {
+  margin: 0 20px 38px 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal__form {
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+
+.modal__form textarea {
+  grid-column: span 1;
+  padding: 23px 15px 15px;
+  min-height: 155px;
+}
+
+.modal__form button[type="submit"] {
+  min-width: 420px;
+  margin-top: 5px;
+  text-align: center;
+
+  @include vp-767 {
+    min-width: 100%;
+  }
+}
+
+.modal__form input[type="checkbox"] + label {
+  margin-top: -2px;
+  margin-bottom: 0;
 }

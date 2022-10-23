@@ -41,6 +41,10 @@
     background-size: cover;
     z-index: 1;
 
+    @include retina {
+      background-image: url("../img/background/paper-airplane@2x.png");
+    }
+
     @include vp-1279 {
       content: none;
     }
