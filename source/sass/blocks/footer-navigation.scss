@@ -1,15 +1,17 @@
 .footer-navigation {
   position: relative;
 
-  &::before {
-    position: absolute;
-    left: calc((100vw - 100%) / 2 * -1);
-    content: "";
-    height: 1px;
-    width: 100vw;
-    background-color: $color-default-white;
-    z-index: 1;
-    margin: auto;
+  @include vp-767 {
+    &::before {
+      position: absolute;
+      left: calc((100vw - 100%) / 2 * -1);
+      content: "";
+      height: 1px;
+      width: 100vw;
+      background-color: $color-default-white;
+      z-index: 1;
+      margin: auto;
+    }
   }
 }
 

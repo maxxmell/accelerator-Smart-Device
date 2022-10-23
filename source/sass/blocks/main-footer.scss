@@ -117,17 +117,17 @@
     display: block;
     min-width: 260px;
     padding-bottom: 36px;
-  }
 
-  &::before,
-  &::after {
-    position: absolute;
-    left: calc((100vw - 100%) / 2 * -1);
-    content: "";
-    height: 1px;
-    width: 100vw;
-    background-color: $color-default-white;
-    z-index: 1;
-    margin: auto;
+    &::before,
+    &::after {
+      position: absolute;
+      left: calc((100vw - 100%) / 2 * -1);
+      content: "";
+      height: 1px;
+      width: 100vw;
+      background-color: $color-default-white;
+      z-index: 1;
+      margin: auto;
+    }
   }
 }
