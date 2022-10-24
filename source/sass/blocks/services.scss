@@ -135,7 +135,7 @@
   }
 }
 
-.services__link--1 {
+.services__link--production-background {
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-1-desktop.jpg");
 
   @include retina {
@@ -159,7 +159,7 @@
   }
 }
 
-.services__link--2 {
+.services__link--assembly-background {
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-2-desktop.jpg");
 
   @include retina {
@@ -183,7 +183,7 @@
   }
 }
 
-.services__link--3 {
+.services__link--spares-background {
   background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-3-desktop.jpg");
 
   @include retina {
