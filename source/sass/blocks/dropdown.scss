@@ -1,3 +1,14 @@
+.dropdown {
+  height: auto;
+}
+
+.dropdown--hidden {
+  @include vp-374 {
+    height: 205px;
+    overflow: hidden;
+  }
+}
+
 .dropdown__button--hidden {
   display: none;
 }
