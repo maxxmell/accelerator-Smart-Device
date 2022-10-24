@@ -211,8 +211,10 @@
 .services__info {
   margin: 0;
   margin-bottom: 20px;
+  width: 190px;
 
   @include vp-767 {
+    width: 150px;
     font-size: 18px;
     line-height: 30px;
   }
