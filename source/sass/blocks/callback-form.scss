@@ -119,7 +119,7 @@
 
 .callback-form input[type="checkbox"] + label::before {
   content: "";
-  display: inline-block;
+  display: block;
   width: 15px;
   height: 15px;
   flex-shrink: 0;
