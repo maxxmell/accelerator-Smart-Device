@@ -1,6 +1,13 @@
 .main-header {
+  position: sticky;
+  top: 0;
   background: $top-to-bottom-dark;
   min-width: 320px;
+  z-index: 10;
+
+  @include vp-1023 {
+    position: static;
+  }
 }
 
 .main-header__container {
