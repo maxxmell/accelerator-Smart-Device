@@ -123,20 +123,25 @@
           <div class="feedback__wrapper">
             <h2 class="feedback__header">Остались вопросы? Задайте их нам!</h2>
             <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
-            <form class="feedback__form callback-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" name="name"
-              pattern="^[а-яА-ЯёЁa-zA-Z]+$"
-              minlength="1"
-              placeholder="Имя" required title="Русские буквы или Латиница">
-              <input type="tel" name="phone"
-                data-mask="+7 (000) 000-00-00"
-                pattern="\+7 [\(][0-9]{3}[\)] [0-9]{3}[\-][0-9]{2}[\-][0-9]{2}"
-                placeholder="Телефон" required title="+7 (000) 000-00-00">
-              <textarea name="question" placeholder="Ваш вопрос"></textarea>
-              <button class="btn" type="submit">Задать вопрос</button>
-              <input id="personal-data1" type="checkbox" value="yes" name="personal-data" required checked>
-              <label for="personal-data1">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
-            </form>
+            <div class="feedback__form callback-form">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <input id="feedback-name" type="text" name="name"
+                pattern="^[а-яА-ЯёЁa-zA-Z]+$"
+                minlength="1"
+                placeholder="Имя" required title="Русские буквы или Латиница">
+                <label for="feedback-name">Имя</label>
+                <input id="feedback-tel" type="tel" name="phone"
+                  data-mask="+7 (000) 000-00-00"
+                  pattern="\+7 [\(][0-9]{3}[\)] [0-9]{3}[\-][0-9]{2}[\-][0-9]{2}"
+                  placeholder="Телефон" required title="+7 (000) 000-00-00">
+                <label for="feedback-tel">Телефон</label>
+                <textarea id="feedback-question" name="question" placeholder="Ваш вопрос"></textarea>
+                <label for="feedback-question">Ваш вопрос</label>
+                <button class="btn" type="submit">Задать вопрос</button>
+                <input id="feedback-personal-data" type="checkbox" value="yes" name="personal-data" required checked>
+                <label for="feedback-personal-data">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -250,21 +255,26 @@
         <div class="modal__content">
           <h2 class="modal__header">Закажите звонок</h2>
           <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <form class="modal__form callback-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="text" name="name"
-            pattern="^[а-яА-ЯёЁa-zA-Z]+$"
-            minlength="1"
-            placeholder="Имя" required title="Русские буквы или Латиница"
-            autofocus>
-            <input type="tel" name="phone"
-              data-mask="+7 (000) 000-00-00"
-              pattern="\+7 [\(][0-9]{3}[\)] [0-9]{3}[\-][0-9]{2}[\-][0-9]{2}"
-              placeholder="Телефон" required title="+7 (000) 000-00-00">
-            <textarea name="question" placeholder="Ваш вопрос"></textarea>
-            <button class="btn" type="submit">Ответить</button>
-            <input id="personal-data2" type="checkbox" value="yes" name="personal-data" required checked>
-            <label for="personal-data2">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
-          </form>
+          <div class="modal__form callback-form">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <input id="modal-name" type="text" name="name"
+              pattern="^[а-яА-ЯёЁa-zA-Z]+$"
+              minlength="1"
+              placeholder="Имя" required title="Русские буквы или Латиница"
+              autofocus>
+              <label for="modal-name">Имя</label>
+              <input id="modal-tel" type="tel" name="phone"
+                data-mask="+7 (000) 000-00-00"
+                pattern="\+7 [\(][0-9]{3}[\)] [0-9]{3}[\-][0-9]{2}[\-][0-9]{2}"
+                placeholder="Телефон" required title="+7 (000) 000-00-00">
+              <label for="modal-tel">Телефон</label>
+              <textarea id="modal-question" name="question" placeholder="Ваш вопрос"></textarea>
+              <label for="modal-question">Ваш вопрос</label>
+              <button class="btn" type="submit">Ответить</button>
+              <input id="modal-personal-data" type="checkbox" value="yes" name="personal-data" required checked>
+              <label for="modal-personal-data">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+            </form>
+          </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="40" height="40">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
