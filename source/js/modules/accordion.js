@@ -4,15 +4,23 @@ function renderAccordion(targetClass, maxViewport) {
   hideAll();
 
   if (viewportWidth < maxViewport) {
-    accordion.addEventListener('click', change);
+    try {
+      accordion.addEventListener('click', change);
+    } catch (e) {
+      reportError(e);
+    }
   }
 
   window.addEventListener('resize', function () {
     viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewportWidth < maxViewport) {
-      accordion.addEventListener('click', change);
-    } else {
-      accordion.removeEventListener('click', change);
+    try {
+      if (viewportWidth < maxViewport) {
+        accordion.addEventListener('click', change);
+      } else {
+        accordion.removeEventListener('click', change);
+      }
+    } catch (e) {
+      reportError(e);
     }
   }, false);
 
@@ -33,11 +41,15 @@ function renderAccordion(targetClass, maxViewport) {
   function hideAll() {
     let headerElement = accordion.querySelectorAll(`.${targetClass}__header`);
     let blockElement = accordion.querySelectorAll(`.${targetClass}__block`);
-    for (let i = 0; i < headerElement.length; i++) {
-      headerElement[i].classList.remove(`${targetClass}__header--selected`);
-    }
-    for (let i = 0; i < blockElement.length; i++) {
-      blockElement[i].classList.add(`${targetClass}__block--closed`);
+    try {
+      for (let i = 0; i < headerElement.length; i++) {
+        headerElement[i].classList.remove(`${targetClass}__header--selected`);
+      }
+      for (let i = 0; i < blockElement.length; i++) {
+        blockElement[i].classList.add(`${targetClass}__block--closed`);
+      }
+    } catch (e) {
+      reportError(e);
     }
   }
 
