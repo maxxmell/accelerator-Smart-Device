@@ -12,11 +12,12 @@
   color: $alice-blue;
   list-style: none;
 
-  @include vp-1279 {
+  @include vp-1023 {
     grid-template-columns: repeat(auto-fit, 40px);
     gap: 20px;
     min-width: 100px;
     margin: 0;
+    margin-right: 23px;
   }
 }
 
@@ -26,7 +27,7 @@
   min-width: 225px;
   margin: 0;
 
-  @include vp-1279 {
+  @include vp-1023 {
     min-width: 40px;
   }
 
@@ -47,7 +48,7 @@
   padding-left: 35px;
   padding-bottom: 2px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     min-height: 40px;
     min-width: 40px;
     padding-bottom: 0;
@@ -65,7 +66,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include vp-1279 {
+    @include vp-1023 {
       height: 40px;
       width: 40px;
     }
@@ -110,7 +111,7 @@
 }
 
 .contacts-list__info {
-  @include vp-1279 {
+  @include vp-1023 {
     display: none;
   }
 }

@@ -21,14 +21,11 @@
   grid-template-columns: minmax(220px, max-content) minmax(480px, 1fr) minmax(220px, max-content);
   gap: 20px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     min-width: 100px;
     min-height: 100px;
-  }
-
-  @include vp-1023 {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -67,12 +64,8 @@
 .main-header__contacts-list {
   justify-self: center;
 
-  @include vp-1279 {
-    justify-self: end;
-  }
-
   @include vp-1023 {
-    margin-right: 23px;
+    justify-self: end;
   }
 
   @include vp-767 {
@@ -85,7 +78,7 @@
   min-width: 160px;
   min-height: 40px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     display: none;
   }
 }
