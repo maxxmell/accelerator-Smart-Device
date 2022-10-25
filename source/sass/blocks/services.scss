@@ -87,6 +87,11 @@
 
   position: relative;
 
+  @include vp-1439 {
+    width: 320px;
+    min-height: 550px;
+  }
+
   @include vp-1279 {
     width: auto;
     min-height: 550px;
