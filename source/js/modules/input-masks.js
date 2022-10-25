@@ -1,10 +1,12 @@
 let maskedInputs = document.querySelectorAll('[data-mask]');
 
 function maskInputs() {
-  for (let index = 0; index < maskedInputs.length; index++) {
-    maskedInputs[index].addEventListener('input', function () {
-      maskInput(maskedInputs[index]);
-    });
+  if (maskedInputs.length > 0) {
+    for (let index = 0; index < maskedInputs.length; index++) {
+      maskedInputs[index].addEventListener('input', function () {
+        maskInput(maskedInputs[index]);
+      });
+    }
   }
 }
 
