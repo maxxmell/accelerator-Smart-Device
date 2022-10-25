@@ -55,8 +55,8 @@
   gap: calc((100% - 1050px) / 2);
 
   @include vp-1919 {
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: calc((100% - 900px) / 2);
+    grid-template-columns: repeat(auto-fit, 28.68%);
+    gap: 6.98%;
   }
 
   @include vp-1023 {
@@ -88,12 +88,7 @@
   position: relative;
 
   @include vp-1439 {
-    width: 320px;
-    min-height: 550px;
-  }
-
-  @include vp-1279 {
-    width: auto;
+    width: 100%;
     min-height: 550px;
   }
 
