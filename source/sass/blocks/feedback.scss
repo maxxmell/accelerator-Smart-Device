@@ -3,7 +3,7 @@
   padding-bottom: 250px;
 
   @include vp-1279 {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 125px;
   }
 
@@ -23,7 +23,11 @@
   padding-left: 625px;
   position: relative;
 
-  @include vp-1279 {
+  @include vp-1919 {
+    padding-left: calc(100vw * 0.33);
+  }
+
+  @include vp-1023 {
     padding-left: 0;
     min-height: 420px;
   }
@@ -45,7 +49,12 @@
       background-image: url("../img/background/paper-airplane@2x.png");
     }
 
-    @include vp-1279 {
+    @include vp-1919 {
+      width: calc(100vw * 0.27);
+      height: calc(100vw * 0.15);
+    }
+
+    @include vp-1023 {
       content: none;
     }
   }
@@ -95,7 +104,7 @@
   margin: 35px 5px 0;
   width: 580px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 100%;
     margin: 25px auto 0;
   }

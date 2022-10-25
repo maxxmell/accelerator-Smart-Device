@@ -2,11 +2,6 @@
   padding-top: 66px;
   padding-bottom: 140px;
 
-  @include vp-1279 {
-    padding-top: 60px;
-    padding-bottom: 75px;
-  }
-
   @include vp-1023 {
     padding-top: 54px;
     padding-bottom: 75px;
@@ -60,10 +55,11 @@
   gap: calc((100% - 1050px) / 2);
 
   @include vp-1919 {
-    gap: 75px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: calc((100% - 900px) / 2);
   }
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin: 0;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -93,12 +89,12 @@
 
   @include vp-1279 {
     width: auto;
-    min-width: 670px;
-    min-height: 250px;
-    padding: 40px 80px 80px 45px;
+    min-height: 550px;
   }
 
   @include vp-1023 {
+    min-width: 670px;
+    min-height: 250px;
     padding: 37px 80px 80px 45px;
   }
 
@@ -143,7 +139,7 @@
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-1-desktop@2x.jpg");
   }
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-1-tablet.jpg");
 
     @include retina {
@@ -167,7 +163,7 @@
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-2-desktop@2x.jpg");
   }
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-2-tablet.jpg");
 
     @include retina {
@@ -191,7 +187,7 @@
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-3-desktop@2x.jpg");
   }
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/background/services/service-card-3-tablet.jpg");
 
     @include retina {
@@ -214,7 +210,7 @@
   margin-bottom: 20px;
   width: 190px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 150px;
   }
 

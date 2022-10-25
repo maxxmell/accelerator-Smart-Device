@@ -17,12 +17,8 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
 
-  @include vp-1279 {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-
   @include vp-1023 {
+    margin: 0;
     margin-bottom: 0;
     font-size: 64px;
     line-height: 75px;
@@ -46,12 +42,8 @@
   font-size: 22px;
   line-height: 35px;
 
-  @include vp-1279 {
-    margin: 0;
-    margin-bottom: 50px;
-  }
-
   @include vp-1023 {
+    margin: 0;
     margin-bottom: 55px;
   }
 
@@ -76,11 +68,6 @@
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.05em;
-
-  @include vp-1279 {
-    margin: 0;
-    margin-bottom: 40px;
-  }
 
   @include vp-1023 {
     min-width: 410px;
