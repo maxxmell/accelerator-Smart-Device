@@ -1,8 +1,8 @@
-.dropdown {
+.dropdown__container {
   height: auto;
 }
 
-.dropdown--hidden {
+.dropdown__container--hidden {
   @include vp-374 {
     height: 205px;
     overflow: hidden;
