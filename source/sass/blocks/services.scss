@@ -52,11 +52,12 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
-  gap: calc((100% - 1050px) / 2);
+  column-gap: calc((100% - 1050px) / 2);
+  row-gap: 30px;
 
   @include vp-1919 {
     grid-template-columns: repeat(auto-fit, 28.68%);
-    gap: 6.98%;
+    column-gap: 6.98%;
   }
 
   @include vp-1023 {

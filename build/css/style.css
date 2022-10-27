@@ -735,6 +735,11 @@ button,
   text-transform: uppercase;
 }
 
+.callback-form input[type="checkbox"] {
+  bottom: 0;
+  right: 32%;
+}
+
 .callback-form input[type="checkbox"] + label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1011,6 +1016,11 @@ button,
 .modal__form input[type="checkbox"] + label {
   margin-top: -2px;
   margin-bottom: 0;
+}
+
+.modal__form input[type="checkbox"] {
+  bottom: 40px;
+  left: 50px;
 }
 
 .main-header {
@@ -1398,7 +1408,10 @@ button,
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
-  gap: calc((100% - 1050px) / 2);
+  -webkit-column-gap: calc((100% - 1050px) / 2);
+  -moz-column-gap: calc((100% - 1050px) / 2);
+  column-gap: calc((100% - 1050px) / 2);
+  row-gap: 30px;
 }
 
 .services__item {
@@ -1787,7 +1800,9 @@ button,
 
   .services__list {
     grid-template-columns: repeat(auto-fit, 28.68%);
-    gap: 6.98%;
+    -webkit-column-gap: 6.98%;
+    -moz-column-gap: 6.98%;
+    column-gap: 6.98%;
   }
 
   .feedback__wrapper {
@@ -2199,6 +2214,11 @@ button,
     margin-top: 10px;
   }
 
+  .callback-form input[type="checkbox"] {
+    right: 0;
+    left: 10px;
+  }
+
   .callback-form input[type="checkbox"] + label {
     margin-top: 5px;
     margin-bottom: 0;
@@ -2217,6 +2237,11 @@ button,
 
   .modal__form button[type="submit"] {
     min-width: 100%;
+  }
+
+  .modal__form input[type="checkbox"] {
+    bottom: 35px;
+    left: 40px;
   }
 
   .main-header__container {

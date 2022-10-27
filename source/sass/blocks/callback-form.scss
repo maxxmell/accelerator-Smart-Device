@@ -89,6 +89,13 @@
 
 .callback-form input[type="checkbox"] {
   @extend.visually-hidden;
+  bottom: 0;
+  right: 32%;
+
+  @include vp-767 {
+    right: 0;
+    left: 10px;
+  }
 }
 
 .callback-form input[type="checkbox"] + label {
