@@ -737,7 +737,7 @@ button,
 
 .callback-form input[type="checkbox"] {
   bottom: 0;
-  right: 32%;
+  right: 22%;
 }
 
 .callback-form input[type="checkbox"] + label {
@@ -1816,6 +1816,10 @@ button,
 }
 
 @media (max-width: 1439px) {
+  .callback-form input[type="checkbox"] {
+    right: 32%;
+  }
+
   .services__link {
     width: 100%;
     min-height: 550px;
