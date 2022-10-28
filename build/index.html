@@ -143,9 +143,11 @@
                   <label for="feedback-tel">Телефон</label>
                   <textarea id="feedback-question" name="question" placeholder="Ваш вопрос"></textarea>
                   <label for="feedback-question">Ваш вопрос</label>
-                  <button class="btn" type="submit">Задать вопрос</button>
-                  <input id="feedback-personal-data" type="checkbox" value="yes" name="personal-data" required checked>
-                  <label for="feedback-personal-data">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+                  <div class="feedback__form-button-wrapper">
+                    <input id="feedback-personal-data" type="checkbox" value="yes" name="personal-data" required checked>
+                    <label for="feedback-personal-data">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+                    <button class="btn" type="submit">Задать вопрос</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -276,9 +278,11 @@
               <label for="modal-tel">Телефон</label>
               <textarea id="modal-question" name="question" placeholder="Ваш вопрос"></textarea>
               <label for="modal-question">Ваш вопрос</label>
-              <button class="btn" type="submit">Ответить</button>
-              <input id="modal-personal-data" type="checkbox" value="yes" name="personal-data" required checked>
-              <label for="modal-personal-data">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+              <div class="modal__form-button-wrapper">
+                <input id="modal-personal-data" type="checkbox" value="yes" name="personal-data" required checked>
+                <label for="modal-personal-data">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+                <button class="btn" type="submit">Ответить</button>
+              </div>
             </form>
           </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>

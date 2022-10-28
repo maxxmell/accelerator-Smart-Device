@@ -80,6 +80,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  order: -1;
 
   @include vp-767 {
     min-width: 270px;
