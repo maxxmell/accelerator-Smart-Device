@@ -161,9 +161,9 @@ export class Modals {
       this._openCallback();
     }
 
-    // if (this._lockFocus) {
-    //   this._focusLock.lock('.modal.is-active', this._startFocus);
-    // }
+    if (this._lockFocus) {
+      this._focusLock.lock('.modal.is-active', this._startFocus);
+    }
 
     document.querySelector('#modal-name').focus();
 
